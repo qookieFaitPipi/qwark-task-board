@@ -1,0 +1,38 @@
+.human {
+  border: 1px #e5e5e5 solid;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  transition: 0.8s;
+  cursor: pointer;
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .userIcon {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .options {
+      transform: rotate(-90deg);
+      font-size: 30px;
+    }
+  }
+}
+
+.human:first-child {
+  margin-top: 30px;
+}
+
+.human:hover {
+  border: 1px #ffa31a solid;
+  transition: 0.8s;
+}

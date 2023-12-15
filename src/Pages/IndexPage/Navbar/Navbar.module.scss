@@ -1,0 +1,46 @@
+.navbar {
+  position: relative;
+  width: 5%;
+  background-color: #fff;
+  height: 100vh;
+  border-right: 1px #e5e5e5 solid;  
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .topBlock {
+      margin-top: 25px;
+
+      .userIcon {
+        cursor: pointer;
+        border: 1px #292928 solid;
+        border-radius: 50%;
+        padding: 5px;
+      }
+    }
+
+    .mainBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+
+      .sideIcon {
+        margin-top: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .bottomBlock {
+      position: absolute;
+      bottom: 0;
+      text-align:center;
+
+      .sideIcon {
+        cursor: pointer;
+      }
+    }
+  }
+}

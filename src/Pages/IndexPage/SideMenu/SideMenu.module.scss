@@ -1,0 +1,58 @@
+.sideMenu {
+  position: relative;
+  width: 15%;
+  background-color: #fff;
+  height: 100vh;
+  border-right: 1px #e5e5e5 solid;  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+
+    .topBlock {
+      margin-top: 25px;
+
+      .title {
+        font-weight: 600;
+        color: #000;
+      }
+    }
+
+    .mainBlock {
+      margin-top: 25px;
+
+      .title {
+        font-weight: 600;
+        color: #000;
+      }
+    }
+
+    .bottomBlock {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 9%;
+      text-align:center;
+      border: 1px #e5e5e5 solid;
+      border-radius: 10px;
+      width: 80%;
+      height: 40px;
+      margin-bottom: 5px;
+      cursor: pointer;
+
+      .addInput {
+        color: #000;
+      }
+    }
+
+    .bottomBlock:hover {
+      border: 1px #ffa31a solid;
+      transition: 0.8s;
+    }
+  }
+}

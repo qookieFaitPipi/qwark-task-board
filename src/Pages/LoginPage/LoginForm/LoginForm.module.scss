@@ -1,0 +1,77 @@
+.loginForm {
+  position: fixed;
+  top: 0;
+  background-color: rgba(52, 58, 64, 0.1);
+  width: 100vw;
+  height: 100vh;
+  color:#fff;
+  transition: 0.6s;
+  opacity: 1;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    pointer-events: all;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 480px;
+    border-radius: 5px;
+    border: 1px #e5e5e5 solid;
+
+    .topBlock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px;
+
+      .title {
+        font-family: 'Roboto', sans-serif;        
+        color: #000;
+        font-size: 20px;
+      }
+    }
+
+    .mainBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+            
+      .textInput {
+        width: 420px;
+        height: 40px;
+        border-radius: 5px;
+        color: #000;
+        margin-top: 20px;
+        border: none;
+        transition: 0.5s;
+        border: 1px #e5e5e5 solid;
+
+      }
+      .textInput:hover {
+        border: 1px #ffa31a solid;
+        transition: 0.5s;
+      }
+      .continueInput {
+        width: 320px;
+        padding: 8px 0px 8px 0px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        margin-top: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition: 0.8s;
+        border: 1px #e5e5e5 solid;
+      }
+      .continueInput:hover {
+        transition: 0.8s;
+        border: 1px #ffa31a solid;
+      }
+    }
+  }
+}

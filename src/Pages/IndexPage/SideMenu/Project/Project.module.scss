@@ -1,0 +1,29 @@
+.project {
+  border: 1px #e5e5e5 solid;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  transition: 0.8s;
+  cursor: pointer;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+
+    }
+
+    .options {
+      transform: rotate(90deg);
+    }
+  }
+}
+.project:first-child {
+  margin-top: 30px;
+}
+
+.project:hover {
+  border: 1px #ffa31a solid;
+  transition: 0.8s;
+}
