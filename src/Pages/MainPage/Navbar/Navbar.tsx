@@ -22,12 +22,10 @@ const Navbar: React.FC = () => {
     dispatch(logout());
     navigate('/');
   }
+  
   return (
     <div className={styles.navbar}>
       <div className={styles.container}>
-        <div className={styles.topBlock}>
-          <img className={styles.userIcon} width='40px' height='40px' src={userIcon} alt="userIcon" />
-        </div>
         <div className={styles.mainBlock}>
           <img className={styles.sideIcon} width='40px' height='40px' src={middle} alt="" />
           <img className={styles.sideIcon} width='38px' height='38px' src={tasks} alt="" />

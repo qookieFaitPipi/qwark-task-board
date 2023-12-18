@@ -3,11 +3,12 @@ import { useDispatch } from 'react-redux';
 
 // slices
 import userSlice from './slices/userSlice';
-
+import mainSlice from './slices/mainSlice';
 
 export const store = configureStore({
   reducer: {
     userSlice: userSlice,
+    mainSlice: mainSlice,
   },
 })
 

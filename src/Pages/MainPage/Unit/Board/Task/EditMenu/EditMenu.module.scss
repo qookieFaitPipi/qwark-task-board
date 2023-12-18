@@ -1,0 +1,26 @@
+.editMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px #e5e5e5 solid;
+    border-radius: 10px;
+    width: 150px;
+
+    .item {
+      margin: 10px;
+      transition: 0.8s;
+      cursor: pointer;
+    }
+
+    .item:hover {
+      color: #ffa31a;
+      transition: 0.8s;
+    }
+  }
+}

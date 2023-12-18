@@ -5,15 +5,15 @@ import {Routes,Route} from 'react-router-dom';
 
 // pages
 import LoginPage from './Pages/LoginPage/LoginPage';
-import IndexPage from './Pages/IndexPage/IndexPage';
+import MainPage from './Pages/MainPage/MainPage';
 
 function App() {
   return (
     <Routes>
       <Route index path="/" element={<LoginPage />} />
-      <Route path="/index" element={<IndexPage />} />
+      <Route path="/main" element={<MainPage />} />
     </Routes>
   );
 }
 
-export default App;
+export default React.memo(App);

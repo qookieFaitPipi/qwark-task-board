@@ -11,12 +11,11 @@
 
     .leftBlock {
       display: flex;
-      margin-top: 20px;
 
       .item {
         margin-left: 20px;
         cursor: pointer;
-        padding-bottom: 20px;
+        padding: 20px 0px 20px 0px;
       }
       .item:first-child {
         margin-left: 0px;
@@ -28,28 +27,24 @@
       }
     }
 
-    .middleBlock {
+    .rightBlock {
       display: flex;
       align-items: center;
 
-      .searchInput {
-        width: 300px;
-        height: 30px;
-        border-radius: 10px;
-        padding: 5px;
-        border: 1px solid #e5e5e5;
-        font-size: 14px;
+      .createInput {
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        cursor: pointer;
+        width: 100px;
+        //background-color: #ffa31a;
+        color: #ffa31a;
+        font-weight: 600;
       }
-    }
-
-    .rightBlock {
-      display: flex;
-      margin-top: 20px;
 
       .item {
         margin-left: 20px;
         cursor: pointer;
-        padding-bottom: 20px;
+        padding: 20px 0px 20px 0px;
       }
       .item:first-child {
         margin-left: 0px;

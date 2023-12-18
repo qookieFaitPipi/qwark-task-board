@@ -15,7 +15,6 @@ export const userSlice = createSlice({
     login: (state, action) => {
       state.userLogin = action.payload.userLogin;
       document.cookie = "userLogin=" + action.payload.userLogin;
-
     },
     logout: (state) => {
       state.userLogin = undefined;

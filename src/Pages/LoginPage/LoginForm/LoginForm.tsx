@@ -24,9 +24,8 @@ const LoginForm: React.FC = () => {
         if(res.data.status) {
           dispatch(login({
             userLogin: userLogin,
-            accessToken: res.data
           }));
-          navigate('/index');
+          navigate('/main');
         }
       })
     } catch(err) {
