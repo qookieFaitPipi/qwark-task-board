@@ -10,7 +10,7 @@ import Unit from './Unit/Unit';
 
 // redux
 import { useDispatch } from 'react-redux';
-import { setUsers, setTasks } from '../../redux/slices/mainSlice';
+import { setUsers } from '../../redux/slices/mainSlice';
 
 const MainPage: React.FC = () => {
   const dispatch = useDispatch()

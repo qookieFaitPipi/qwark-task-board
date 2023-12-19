@@ -25,7 +25,6 @@ export const mainSlice = createSlice({
     },
     deleteTask: (state, action) => {
       state.tasks = state.tasks.filter((task: any) => task.id !== action.payload.id);
-
     }
   },
 })

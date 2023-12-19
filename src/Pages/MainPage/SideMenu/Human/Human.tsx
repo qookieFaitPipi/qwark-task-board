@@ -25,7 +25,7 @@ const Human: React.FC<UserType> = ({id, login, image}) => {
         }))
       })
     } catch(err) {
-      console.log(err)
+      console.log(err);
     }
   }
 
