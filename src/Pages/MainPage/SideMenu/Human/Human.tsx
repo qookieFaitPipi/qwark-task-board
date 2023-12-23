@@ -21,7 +21,7 @@ const Human: React.FC<UserType> = ({id, login, image}) => {
       axios.get('http://127.0.0.1:1636/get_tasks/' + login).then((res) => {
         dispatch(setTasks({
           tasks: res.data,
-          currentUser: login
+          pickedUser: login
         }))
       })
     } catch(err) {

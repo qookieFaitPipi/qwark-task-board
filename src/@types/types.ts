@@ -1,14 +1,20 @@
 // userSlice
 export interface UserSliceState {
-  userLogin: string | undefined;
-  accessToken: string | undefined
+  userLogin: string | undefined,
+  accessToken: string | undefined,
 }
 
 // mainSlice
 export interface MainSliceState {
-  users: UserType[]
-  tasks: TaskType[]
-  currentUser: string | undefined
+  users: UserType[],
+  tasks: TaskType[],
+  pickedUser: string | undefined,
+}
+
+// boxSlice
+export interface BoxSliceState {
+  infoBoxState: string | undefined,
+  pickedTaskId: string | undefined,
 }
 
 export type UserType = {
@@ -25,13 +31,13 @@ export type TaskType = {
   image: string | null,
   tag: string,
   creator: string,
-  status: number,
 }
 
 export type TagMenuType = {
+  tag: string,
+  setTag: any,
   tagMenuActive: boolean,
   setTagMenuActive: any,
-  setTaskTag: any,
 }
 
 export type EditMenuType = {

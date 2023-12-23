@@ -5,7 +5,7 @@ import { UserSliceState } from '../../@types/types';
 
 const initialState: UserSliceState = {
   userLogin: undefined,
-  accessToken: undefined
+  accessToken: undefined,
 }
 
 export const userSlice = createSlice({

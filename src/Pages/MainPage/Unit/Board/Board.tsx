@@ -7,6 +7,7 @@ import Task from './Task/Task';
 // redux
 import { useSelector } from 'react-redux';
 
+// types
 import { TaskType } from '../../../../@types/types';
 
 const Board: React.FC = () => {
@@ -24,7 +25,6 @@ const Board: React.FC = () => {
             image={task.image}
             tag={task.tag}
             creator={task.creator}
-            status={task.status}
           />
         )}
       </div>

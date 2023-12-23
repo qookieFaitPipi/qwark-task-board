@@ -6,11 +6,11 @@ import { MainSliceState } from '../../@types/types';
 const initialState: MainSliceState = {
   users: [],
   tasks: [],
-  currentUser: undefined
+  pickedUser: undefined,
 }
 
 export const mainSlice = createSlice({
-  name: 'user',
+  name: 'main',
   initialState: initialState,
   reducers: {
     setUsers: (state, action) => {
@@ -18,14 +18,15 @@ export const mainSlice = createSlice({
     },
     setTasks: (state, action) => {
       state.tasks = action.payload.tasks;
-      state.currentUser = action.payload.currentUser
+      state.pickedUser = action.payload.pickedUser
     },
     addTask: (state, action) => {
       state.tasks.push(action.payload)
     },
     deleteTask: (state, action) => {
       state.tasks = state.tasks.filter((task: any) => task.id !== action.payload.id);
-    }
+    },
+
   },
 })
 

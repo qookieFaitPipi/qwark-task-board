@@ -2,7 +2,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  margin: 20px;
+  margin-left: 120px;
 
   .container {
     display: flex;
@@ -10,7 +10,7 @@
     background-color: #fff;
     border: 1px #e5e5e5 solid;
     border-radius: 10px;
-    width: 300px;
+    width: auto;
 
     .item {
       margin: 10px 10px 10px 10px;
