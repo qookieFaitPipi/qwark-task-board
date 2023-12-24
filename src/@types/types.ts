@@ -13,8 +13,8 @@ export interface MainSliceState {
 
 // boxSlice
 export interface BoxSliceState {
-  infoBoxState: string | undefined,
-  pickedTaskId: string | undefined,
+  taskBoxState: string | undefined,
+  updateTaskId: string | undefined,
 }
 
 export type UserType = {

@@ -5,14 +5,13 @@ import styles from './Unit.module.scss';
 import Swicher from './Swicher/Swicher';
 import Searcher from './Searcher/Searcher';
 import Board from './Board/Board';
-import InfoBox from './InfoBox/InfoBox';
+import TaskBox from './TaskBox/TaskBox';
 
 // redux
 import { useSelector } from 'react-redux';
 
 const Unit: React.FC = () => {
-  const {infoBoxState} = useSelector((state: any) => state.boxSlice);
-  console.log(infoBoxState);
+  const {taskBoxState} = useSelector((state: any) => state.boxSlice);
 
   return ( 
     <div className={styles.unit}>
@@ -21,9 +20,9 @@ const Unit: React.FC = () => {
         <Swicher 
 
         />
-        {infoBoxState === 'create'
+        {taskBoxState
           ? 
-          <InfoBox /> 
+          <TaskBox /> 
           :
           <Board />
         }

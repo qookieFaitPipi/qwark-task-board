@@ -1,25 +1,33 @@
 import React from 'react';
 import styles from './EditMenu.module.scss';
 
+// axios
+import axios from 'axios';
+
 // types
 import { EditMenuType } from '../../../../../../@types/types';
 
 // redux
 import { useDispatch } from 'react-redux';
 import { deleteTask } from '../../../../../../redux/slices/mainSlice';
-import { pickTaskId } from '../../../../../../redux/slices/boxSlice';
+import { setUpdateTaskId, selectTaskBoxState } from '../../../../../../redux/slices/boxSlice';
 
 const EditMenu: React.FC<EditMenuType> = ({taskId, editMenuActive, setEditMenuActive}) => {
   const dispatch = useDispatch()
 
   const userDeleteTask = () => {
-    setEditMenuActive(!editMenuActive);
-    dispatch(deleteTask({id: taskId}));
+    axios.get('http://127.0.0.1:1636/delete_task/' + taskId).then((res) => {
+      if(res.data.status) {
+        setEditMenuActive(!editMenuActive);
+        dispatch(deleteTask({id: taskId}));
+      }
+    })
   }
 
   const userEditTask = () => {
     setEditMenuActive(!editMenuActive);
-    dispatch(pickTaskId(taskId));
+    dispatch(setUpdateTaskId(taskId));
+    dispatch(selectTaskBoxState('update'));
   }
 
   return (

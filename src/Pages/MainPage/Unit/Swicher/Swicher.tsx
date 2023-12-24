@@ -4,17 +4,22 @@ import styles from './Swicher.module.scss';
 // redux
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { selectBoxState } from '../../../../redux/slices/boxSlice';
+import { selectTaskBoxState } from '../../../../redux/slices/boxSlice';
 import { getCookie } from '../../../../Hooks/getCookie';
 
 const Swicher: React.FC = () => {
   const {pickedUser} = useSelector((state: any) => state.mainSlice);
+  const {taskBoxState} = useSelector((state: any) => state.boxSlice);
   const dispatch = useDispatch();
 
   const userCreateTask = () => {
-    dispatch(selectBoxState('create'));
-  }
+    if(taskBoxState !== 'create') {
+      dispatch(selectTaskBoxState('create'));
+    } else {
+      dispatch(selectTaskBoxState(undefined));
+    }
 
+  }
 
   return (
     <div className={styles.swicher}>
